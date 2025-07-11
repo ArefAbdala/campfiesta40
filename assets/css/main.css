@@ -3281,6 +3281,8 @@ input, select, textarea {
     .overlay {
 		background-color: rgba(0,0,0,0.5);
 		position: absolute;
+		
+		
 	}
 	#intro {
 		background-image: url("https://www.campfiesta.com/uploads/9/6/4/1/96415408/img-0848_orig.jpg");
@@ -3289,6 +3291,8 @@ input, select, textarea {
         height: 100vh;
         width: 100vw;
 		position: relative;
+		padding: 5rem 0 0 0 ;
+		text-align: center;
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3366,6 +3370,7 @@ input, select, textarea {
 			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
+			background-color: rgba(255, 255, 255, 0.6);
 		}
 
 		#intro + #header {
@@ -4655,7 +4660,7 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-
+	}
 	.campfrontphoto{
 		background-image: url("https://www.campfiesta.com/uploads/9/6/4/1/96415408/img-0848_orig.jpg");
 		background-size: cover;
