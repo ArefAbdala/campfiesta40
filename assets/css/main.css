@@ -181,7 +181,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Fira Code";
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -3264,6 +3264,26 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
+			#wrapper.fade-in:after {
+			pointer-events: none;
+			-moz-transition: opacity 1s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			background: #87CEEB;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
 
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
@@ -3279,8 +3299,13 @@ input, select, textarea {
 
 /* Intro */
     .overlay {
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.4);
+		z-index: 1;
 		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%
 		
 		
 	}
@@ -3291,8 +3316,16 @@ input, select, textarea {
         height: 100vh;
         width: 100vw;
 		position: relative;
-		padding: 5rem 0 0 0 ;
 		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.text-content {
+		position: relative;
+		z-index: 2;
+		color: rgb(23, 90, 129);
+
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3311,7 +3344,7 @@ input, select, textarea {
 			}
 
 		#intro strong, #intro b {
-			color: #ffffff;
+			color:inherit;
 		}
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
@@ -4668,4 +4701,13 @@ input, select, textarea {
 		width: 100vw;
 		background-position: center;
 		display: block;
+		ov
     }
+	#intro {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#intro.fade-in-top {
+  opacity: 1;
+}

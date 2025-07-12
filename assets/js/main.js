@@ -252,6 +252,15 @@
 					});
 
 			});
+			window.addEventListener('scroll', () => {
+  const intro = document.querySelector('#intro');
+  if (window.scrollY < 100) {
+    intro.classList.add('fade-in-top');
+  } else {
+    intro.classList.remove('fade-in-top');
+  }
+});
+
 
 		}
 
