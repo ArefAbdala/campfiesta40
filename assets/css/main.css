@@ -4704,10 +4704,10 @@ input, select, textarea {
 		ov
     }
 	#intro {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
+  	opacity: 0;
+  	transition: opacity 0.5s ease-in-out;
+	}
 
-#intro.fade-in-top {
-  opacity: 1;
-}
+	#intro.fade-in-top {
+  	opacity: 1;
+	}
