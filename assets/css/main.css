@@ -3310,6 +3310,12 @@ input, select, textarea {
 		
 	}
 	#intro {
+  	opacity: 0;
+  	transition: opacity 0.5s ease-in-out;
+	}
+
+	
+	#intro {
 		background-image: url("https://www.campfiesta.com/uploads/9/6/4/1/96415408/img-0848_orig.jpg");
         background-size: cover;
         background-position: center;
@@ -3320,6 +3326,8 @@ input, select, textarea {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		opacity: 0;
+  		transition: opacity 0.5s ease-in-out;
 	}
 	.text-content {
 		position: relative;
@@ -3332,7 +3340,7 @@ input, select, textarea {
 			color: #ffffff;
 			position: relative;
 		}
-
+		
 		#intro a {
 			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
@@ -3418,7 +3426,9 @@ input, select, textarea {
 				opacity: 0;
 				visibility: hidden;
 			}
-
+		#intro.fade-in-top {
+  			opacity: 1;
+		}
 		#intro.hidden {
 			pointer-events: none;
 			-moz-transform: translateY(2rem);
@@ -4703,11 +4713,3 @@ input, select, textarea {
 		display: block;
 		ov
     }
-	#intro {
-  	opacity: 0;
-  	transition: opacity 0.5s ease-in-out;
-	}
-
-	#intro.fade-in-top {
-  	opacity: 1;
-	}
