@@ -4711,5 +4711,5 @@ input, select, textarea {
 		width: 100vw;
 		background-position: center;
 		display: block;
-		ov
-    }
+		overflow: hidden;
+    };
