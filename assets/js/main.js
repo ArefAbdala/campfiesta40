@@ -142,6 +142,8 @@
 					}
 				});
 
+				
+
 		// Panel.
 			$navPanel = $(
 				'<div id="navPanel">' +
@@ -259,7 +261,10 @@
   } else {
     intro.classList.remove('fade-in-top');
   }
+  
 });
+
+
 
 
 		}

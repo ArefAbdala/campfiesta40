@@ -4715,3 +4715,28 @@ input, select, textarea {
 		display: block;
 		overflow: hidden;
     };
+	.homeTGCHTW {
+		text-align: center;
+	}
+
+	.slideshow-container{
+		width: 100%;
+		max-width: 600px;
+		height: 400px;
+		margin: auto;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.slide{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0;
+		transition: opacity 1s ease-in-out;
+	}
+
+	.slide.active{
+		opacity: 1;
+	}
