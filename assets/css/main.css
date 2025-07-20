@@ -4746,3 +4746,8 @@ input, select, textarea {
 		.slide.active {
 		opacity: 1;
 		}
+		@media (max-width: 600px) {
+  		.slideshow-container {
+   		 aspect-ratio: 4 / 3;
+ 		 }
+}
