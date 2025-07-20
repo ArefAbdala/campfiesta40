@@ -4726,9 +4726,7 @@ input, select, textarea {
 
 	.slideshow-container{
 		width: 100%;
-		max-width: 800px;
 		height: 800px;
-		max-height:800px;
 		margin: auto;
 		position: relative;
 		overflow: hidden;
