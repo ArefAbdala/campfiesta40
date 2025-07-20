@@ -3311,12 +3311,22 @@ input, select, textarea {
 		
 		
 	}
-	#intro {
-  	opacity: 0;
-  	transition: opacity 0.5s ease-in-out;
-	}
-
-	
+		/* this code will fix the loading issue but will remove the fading feature
+		body:not(.is-preload) #intro {
+		opacity: 1;
+		transition: opacity 0.5s ease-in-out;
+		
+		}
+		*/
+		.campfrontphoto {
+		background-image: url("https://www.campfiesta.com/uploads/9/6/4/1/96415408/img-0848_orig.jpg");
+		background-size: cover;
+		height: 100vh;
+		width: 100vw;
+		background-position: center;
+		display: block;
+		overflow: hidden;
+		}
 	#intro {
 		background-image: url("https://www.campfiesta.com/uploads/9/6/4/1/96415408/img-0848_orig.jpg");
         background-size: cover;
@@ -3331,6 +3341,8 @@ input, select, textarea {
 		opacity: 0;
   		transition: opacity 0.5s ease-in-out;
 	}
+
+
 	.text-content {
 		position: relative;
 		z-index: 2;
@@ -4706,23 +4718,16 @@ input, select, textarea {
 			visibility: visible;
 		}
 	}
-	.campfrontphoto{
-		background-image: url("https://www.campfiesta.com/uploads/9/6/4/1/96415408/img-0848_orig.jpg");
-		background-size: cover;
-		height: 100vh;
-		width: 100vw;
-		background-position: center;
-		display: block;
-		overflow: hidden;
-    };
+
+
 	.homeTGCHTW {
 		text-align: center;
 	}
 
 	.slideshow-container{
 		width: 100%;
-		max-width: 600px;
-		height: 400px;
+		max-width: 800px;
+		height: 600px;
 		margin: auto;
 		position: relative;
 		overflow: hidden;
