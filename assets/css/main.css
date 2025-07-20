@@ -4726,7 +4726,7 @@ input, select, textarea {
 
 		.slideshow-container {
 		width: 100%;
-		max-width: auto;
+		
 		max-height: 600px;
 		aspect-ratio: 16 / 9; /* maintains responsive height */
 		margin: auto;
